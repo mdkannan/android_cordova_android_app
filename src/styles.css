@@ -1,0 +1,184 @@
+/* You can add global styles to this file, and also import other style files */
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+.field-validation-error
+{
+  color: #ff0000;
+}
+
+.field-validation-valid
+{
+  display: none;
+}
+
+.input-validation-error
+{
+  border: 1px solid #ff0000;
+  background-color: #ffeeee;
+}
+
+.validation-summary-errors
+{
+  font-weight: bold;
+  color: #ff0000;
+}
+
+.validation-summary-valid
+{
+  display: none;
+}
+body {
+  background:#333;
+}
+
+.form_bg {
+  background-color:#eee;
+  color:#666;
+  padding:2%;
+  border-radius:50px;
+  border:1px solid #fff;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 500px;
+  height: 500px;
+  margin-top:-3%
+}
+
+.row{
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.big{
+  font-family:'Exo', sans-serif;
+}
+
+.align-center {
+
+  text-align:center !important;
+}
+
+
+.wo_container{
+  background-color: #F5F5F5;
+}
+
+.row-1{
+  text-align:center;
+  background-color:grey;
+  color:white;
+}
+
+.agp_wo{
+  font-size:x-large;
+  font-weight:500;
+  padding:2%;
+  text-align:center;
+  margin-top:3%;
+  background-color:#edc62a;
+}
+
+.wopa{
+  padding-top:2%;
+  font-size:large;
+  font-weight:500;
+}
+
+.district_wo{
+  padding:2%;
+  background-color:#d2d5db;
+}
+
+.select_wo{
+  padding:2%;
+  background-color:#006750;
+  color:white;
+}
+
+.big-title{
+  font-size:25px;
+  font-weight:900;
+}
+
+.material-icons{
+  padding-right:3%;
+}
+
+.wo_container{
+  border :solid;
+}
+
+.glyphicon-ok{
+  color:green !important;
+}
+
+.ack-row{
+  padding:2%;
+}
+
+.btn-success{
+  background-color:#006750;
+}
+
+.buttonlink{
+  display:block;
+  width:9em;
+  height:2em;
+  text-align:center;
+  text-decoration:none;
+  font-weight:900;
+}
+.buttonlink:hover{
+  border-color: #666 #aaa #bbb #888;
+  border-width:4px 3px 3px 4px;
+  color:#fff;
+  cursor: pointer;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

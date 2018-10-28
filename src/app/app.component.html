@@ -1,0 +1,45 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container" style="width:100%" *ngIf="!loginflag">
+  <div class="jumbotron" style="text-align:center;padding:2%;background-color:#13508e;color:white">
+    <h1 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+      EIA ASA DevOps Tooling Sandbox 23/JUl
+    </h1>
+  </div>
+  <div class="row">
+    <div class="form_bg">
+      <form class="col-md-12 align-center">
+        <div class="col-md-12 align-center">
+          <img src="./assets/login.png" style="width:70%;height:70%" alt="Login" />
+          <br />
+          <br />
+
+          <div class="col-md-12 align-center" id="validateUserPswd" style="color:red;display:none">*Invalid Username/Password</div>
+          <div class="input-group col-md-10 col-md-offset-1">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input id="username" type="text" class="form-control" name="username" placeholder="UserName" #userNameInput/>
+          </div>
+          <div class="row" style="padding:2%"></div>
+          <div class="input-group col-md-10 col-md-offset-1">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+            <input id="password" type="password" class="form-control" name="password" placeholder="Password" #pwd />
+          </div>
+          <br />
+          <div class="align-center">
+            <button type="submit" class="btn btn-primary" id="btnLogin"  (click)="btnLoginclick1(userNameInput.value,
+            pwd.value)">Login</button>
+          </div>
+          <div  class="align-center hcf-div-imp" style="display:none">
+            <p style="color:red">Microservice not Implemented</p>
+          </div>
+        </div>
+      </form>
+
+    </div>
+
+  </div>
+  <form action="/workorder" id="WOform" method="post" style="display:none">
+    <input type="hidden" id="jsonWO" name="jsonWO"/>
+  </form>
+</div>
+<router-outlet> </router-outlet>
+
